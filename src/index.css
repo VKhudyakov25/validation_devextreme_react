@@ -1,18 +1,43 @@
 .dx-viewport {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  flex-direction: column;
+  width: auto;
 }
 
-.textbox {
-  margin-top: 10px;
-}
-
-.App,
-.text-boxes-value {
+.container {
   display: flex;
+  align-items: center;
+  align-content: center;
+  height: fit-content;
+  width: max-content;
+  align-items: flex-end;
+}
+
+.controls {
+  display: flex;
+  align-items: flex-start;
   flex-direction: column;
+  justify-content: space-around;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+.dx-box-flex.dx-box.dx-widget.dx-collection {
+  display: flex;
+  align-items: flex-start;
+}
+
+.dx-collection {
+  display: flex;
   align-items: flex-start;
 }
